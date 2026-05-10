@@ -9,6 +9,8 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     (async () => {
+      const token = localStorage.getItem("kuswa_token");
+      if (!token) { setUser(false); setChecking(false); return; }
       try {
         const { data } = await api.get("/auth/me");
         setUser(data);
