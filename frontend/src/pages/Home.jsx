@@ -4,6 +4,7 @@ import { useLang } from "../context/LanguageContext";
 import { api } from "../lib/api";
 import { KUSWA_IMAGES, KUSWA_GALLERY } from "../lib/images";
 import NoticeAlert from "../components/NoticeAlert";
+import HeroSlideshow from "../components/HeroSlideshow";
 import { ArrowRight, BookOpen, HandHeart, HeartPulse, Leaf, Music, Users, Calendar, Camera, Sparkles } from "lucide-react";
 
 const LOGO = "https://customer-assets.emergentagent.com/job_bb744ec9-a084-4368-b9f5-270ac09fd22f/artifacts/cetkcmdm_Untitled%20design.png";
@@ -51,18 +52,15 @@ export default function Home() {
           </div>
 
           <div className="lg:col-span-6 relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-soft">
-              <img src={KUSWA_IMAGES.eid_distribution} alt="KUSWA activity" className="w-full h-[440px] object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-tr from-kuswa-dark-blue/50 via-transparent to-transparent" />
-            </div>
-            <div className="absolute -bottom-6 -left-4 sm:-left-8 glass-card rounded-2xl p-4 flex items-center gap-3 shadow-soft">
+            <HeroSlideshow lang={lang} />
+            <div className="absolute -bottom-6 -left-4 sm:-left-8 glass-card rounded-2xl p-4 flex items-center gap-3 shadow-soft z-10">
               <img src={LOGO} alt="logo" className="w-12 h-12 rounded-full" />
               <div>
                 <div className="text-xs text-kuswa-muted">{t.estd}</div>
                 <div className="font-bold text-kuswa-dark-blue">{t.org_short}</div>
               </div>
             </div>
-            <div className="absolute -top-6 -right-4 sm:-right-8 glass-card rounded-2xl p-4 hidden sm:block">
+            <div className="absolute -top-6 -right-4 sm:-right-8 glass-card rounded-2xl p-4 hidden sm:block z-10">
               <div className="text-2xl font-bold text-kuswa-orange">{stats?.years_active ?? 22}+</div>
               <div className="text-xs text-kuswa-muted">{t.stats.years}</div>
             </div>
