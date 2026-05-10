@@ -12,11 +12,11 @@ module.exports = {
       },
       colors: {
         kuswa: {
-          "dark-blue": "#0D4F97",
-          "blue": "#1E73BE",
-          "light-blue": "#56C2F0",
-          "orange": "#F28C28",
-          "gold": "#F5B14C",
+          "dark-blue": "rgb(var(--c-dark-blue) / <alpha-value>)",
+          "blue": "rgb(var(--c-blue) / <alpha-value>)",
+          "light-blue": "rgb(var(--c-light-blue) / <alpha-value>)",
+          "orange": "rgb(var(--c-orange) / <alpha-value>)",
+          "gold": "rgb(var(--c-gold) / <alpha-value>)",
           "bg": "#F5F5F5",
           "ink": "#1A202C",
           "muted": "#4A5568",

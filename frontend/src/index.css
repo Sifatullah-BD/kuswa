@@ -6,6 +6,13 @@
 
 @layer base {
   :root {
+    /* KUSWA brand colors as RGB channels (used with rgb(var(--x) / alpha)) */
+    --c-dark-blue: 13 79 151;
+    --c-blue: 30 115 190;
+    --c-light-blue: 86 194 240;
+    --c-orange: 242 140 40;
+    --c-gold: 245 177 76;
+
     --background: 0 0% 100%;
     --foreground: 222 47% 11%;
     --card: 0 0% 100%;
@@ -54,60 +61,60 @@
 
 @layer utilities {
   .text-gradient-brand {
-    background: linear-gradient(90deg, #0D4F97, #56C2F0);
+    background: linear-gradient(90deg, rgb(var(--c-dark-blue)), rgb(var(--c-light-blue)));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
   .text-gradient-warm {
-    background: linear-gradient(90deg, #F28C28, #F5B14C);
+    background: linear-gradient(90deg, rgb(var(--c-orange)), rgb(var(--c-gold)));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
-  .bg-gradient-header { background: linear-gradient(90deg, #0D4F97, #56C2F0); }
-  .bg-gradient-button { background: linear-gradient(90deg, #F28C28, #F5B14C); }
-  .bg-gradient-section { background: linear-gradient(135deg, #1E73BE, #56C2F0); }
+  .bg-gradient-header { background: linear-gradient(90deg, rgb(var(--c-dark-blue)), rgb(var(--c-light-blue))); }
+  .bg-gradient-button { background: linear-gradient(90deg, rgb(var(--c-orange)), rgb(var(--c-gold))); }
+  .bg-gradient-section { background: linear-gradient(135deg, rgb(var(--c-blue)), rgb(var(--c-light-blue))); }
   .bg-gradient-soft {
     background:
-      radial-gradient(ellipse at top right, rgba(86, 194, 240, 0.18), transparent 60%),
-      radial-gradient(ellipse at bottom left, rgba(242, 140, 40, 0.12), transparent 55%),
+      radial-gradient(ellipse at top right, rgb(var(--c-light-blue) / 0.18), transparent 60%),
+      radial-gradient(ellipse at bottom left, rgb(var(--c-orange) / 0.12), transparent 55%),
       #ffffff;
   }
   .glass-card {
     background: rgba(255,255,255,0.7);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(13, 79, 151, 0.08);
+    border: 1px solid rgb(var(--c-dark-blue) / 0.08);
   }
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-white font-semibold;
-    background: linear-gradient(90deg, #F28C28, #F5B14C);
-    box-shadow: 0 8px 24px rgba(242, 140, 40, 0.28);
+    background: linear-gradient(90deg, rgb(var(--c-orange)), rgb(var(--c-gold)));
+    box-shadow: 0 8px 24px rgb(var(--c-orange) / 0.28);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(242, 140, 40, 0.36); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgb(var(--c-orange) / 0.36); }
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-white;
-    background: linear-gradient(90deg, #0D4F97, #1E73BE);
+    background: linear-gradient(90deg, rgb(var(--c-dark-blue)), rgb(var(--c-blue)));
     transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
   .btn-secondary:hover { transform: translateY(-2px); }
   .btn-outline {
     @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold border-2;
-    border-color: #0D4F97;
-    color: #0D4F97;
+    border-color: rgb(var(--c-dark-blue));
+    color: rgb(var(--c-dark-blue));
     background: white;
     transition: all 0.25s ease;
   }
-  .btn-outline:hover { background: #0D4F97; color: white; }
+  .btn-outline:hover { background: rgb(var(--c-dark-blue)); color: white; }
   .section-pad { @apply py-16 md:py-24; }
   .container-x { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
   .card-soft {
     @apply bg-white rounded-2xl p-6 transition-all duration-300;
-    box-shadow: 0 4px 14px rgba(13, 79, 151, 0.06);
+    box-shadow: 0 4px 14px rgb(var(--c-dark-blue) / 0.06);
   }
-  .card-soft:hover { box-shadow: 0 12px 28px rgba(13, 79, 151, 0.12); transform: translateY(-3px); }
+  .card-soft:hover { box-shadow: 0 12px 28px rgb(var(--c-dark-blue) / 0.12); transform: translateY(-3px); }
 }
 
 @layer base {

@@ -39,18 +39,21 @@ function PublicRoutes() {
 function App() {
   return (
     <div className="App">
-      <LanguageProvider>
-        <AuthProvider>
-          <BrowserRouter>
-            <Routes>
-              <Route path="/login" element={<Login />} />
-              <Route path="/admin" element={<Admin />} />
-              <Route path="/*" element={<PublicRoutes />} />
-            </Routes>
-            <Toaster position="top-right" richColors />
-          </BrowserRouter>
-        </AuthProvider>
-      </LanguageProvider>
+      <ThemeProvider>
+        <LanguageProvider>
+          <AuthProvider>
+            <BrowserRouter>
+              <Routes>
+                <Route path="/login" element={<Login />} />
+                <Route path="/admin" element={<Admin />} />
+                <Route path="/*" element={<PublicRoutes />} />
+              </Routes>
+              <ThemeSwitcher />
+              <Toaster position="top-right" richColors />
+            </BrowserRouter>
+          </AuthProvider>
+        </LanguageProvider>
+      </ThemeProvider>
     </div>
   );
 }
