@@ -1,0 +1,116 @@
+{
+  "theme": "light",
+  "archetype": "Archetype 1 (Organic & Earthy) - Modified for KUSWA Brand",
+  "mood": "Warm, trustworthy, community-driven, professional, approachable",
+  "colors": {
+    "primary": {
+      "dark_blue": "#0D4F97",
+      "medium_blue": "#1E73BE",
+      "light_blue": "#56C2F0"
+    },
+    "accent": {
+      "orange": "#F28C28",
+      "golden_orange": "#F5B14C"
+    },
+    "neutral": {
+      "white": "#FFFFFF",
+      "light_gray": "#F5F5F5",
+      "text_dark": "#1A202C",
+      "text_muted": "#4A5568"
+    },
+    "gradients": {
+      "header": "linear-gradient(90deg, #0D4F97, #56C2F0)",
+      "button": "linear-gradient(90deg, #F28C28, #F5B14C)",
+      "section_highlight": "linear-gradient(135deg, #1E73BE, #56C2F0)"
+    },
+    "rules": {
+      "backgrounds": "Use #FFFFFF or #F5F5F5 primarily. DO NOT use dark backgrounds except for specific highlighted sections or footer.",
+      "text_contrast": "Ensure APCA minimum contrast. Use #1A202C for primary text, never #000000.",
+      "no_purple": "Avoid purple/violet entirely, as instructed."
+    }
+  },
+  "typography": {
+    "english_fonts": {
+      "primary": "Poppins",
+      "secondary": "Montserrat"
+    },
+    "bengali_fonts": {
+      "primary": "Hind Siliguri",
+      "secondary": "Noto Sans Bengali"
+    },
+    "scales": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-gray-900",
+      "h3": "text-xl sm:text-2xl font-medium text-gray-800",
+      "h4": "text-lg sm:text-xl font-medium text-gray-800",
+      "body": "text-base text-gray-600 leading-relaxed",
+      "small": "text-sm text-gray-500"
+    },
+    "rules": {
+      "bilingual_support": "Implement a toggle that seamlessly switches font families depending on the active language.",
+      "alignment": "Left-align dense text and paragraphs. Center-align hero headings and section titles."
+    }
+  },
+  "layout_spacing": {
+    "spacing_scale": "p-4, p-6, p-8, p-12, p-16, p-24, p-32",
+    "containers": "Use max-w-7xl mx-auto for main content width.",
+    "border_radius": "Soft rounded corners everywhere: rounded-xl to rounded-2xl.",
+    "shadows": "Soft, diffuse shadows: shadow-lg for cards, hover:shadow-xl for interactive elements.",
+    "grids": "Use 12-column bento grids for marketing sections. Use 3-4 column dense grids for photo galleries and team members."
+  },
+  "components": {
+    "marketing": "Use pure HTML/Tailwind for dynamic, asymmetrical marketing sections (Hero, About, Impact Stats).",
+    "interactive": "Use customized Shadcn UI for Tabs, Dialogs, Select, Forms (Membership/Contact).",
+    "icons": "Use lucide-react for UI interactions. Use @phosphor-icons/react or react-icons for dense community themes.",
+    "header": "Sticky nav with solid white or very light gray background to ensure legibility of blue/orange gradient elements.",
+    "footer": "Dark Blue background (#0D4F97) with White text for maximum contrast and solid foundation.",
+    "cards": "White background, rounded-2xl, soft shadow-sm, hover:shadow-md transition-all. Minimal borders."
+  },
+  "motion": {
+    "hover_states": "Buttons lift (-translate-y-0.5) and glow. Cards subtle lift.",
+    "transitions": "transition-all duration-300 ease-in-out.",
+    "scroll_reveal": "Use framer-motion for smooth staggered fade-in up for lists (news, events, committee members)."
+  },
+  "media": {
+    "logo": {
+      "url": "https://customer-assets.emergentagent.com/job_bb744ec9-a084-4368-b9f5-270ac09fd22f/artifacts/cetkcmdm_Untitled%20design.png",
+      "description": "KUSWA Brand Logo - Circular emblem with sun, hands, graduation cap"
+    },
+    "membership_form_reference": {
+      "url": "https://customer-assets.emergentagent.com/job_bb744ec9-a084-4368-b9f5-270ac09fd22f/artifacts/el0lkd6x_Membership%20_KUSWA.png",
+      "description": "Membership form visual reference"
+    },
+    "hero": {
+      "url": "https://images.pexels.com/photos/37249876/pexels-photo-37249876.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Happy children in a rural school in Sylhet, Bangladesh - perfect for education/welfare hero"
+    },
+    "activities": [
+      {
+        "url": "https://images.unsplash.com/photo-1765018028697-2baae4577cdd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBjaGFyaXR5JTIwdm9sdW50ZWVyfGVufDB8fHx8MTc3ODM4NTU4OXww&ixlib=rb-4.1.0&q=85",
+        "description": "Community charity volunteer holding sign"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1774557936610-ea8aa35019bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwzfHxjb21tdW5pdHklMjBjaGFyaXR5JTIwdm9sdW50ZWVyfGVufDB8fHx8MTc3ODM4NTU4OXww&ixlib=rb-4.1.0&q=85",
+        "description": "People gathered at an outdoor event with blue banners matching brand"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1610198999675-d3ee3ee43269?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxiYW5nbGFkZXNoJTIwdmlsbGFnZSUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NzgzODU1ODl8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Brown boat on river in Bangladesh, good for rural relief projects"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1765994898026-4fa84ade4a61?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxydXJhbCUyMHNjaG9vbCUyMGNoaWxkcmVufGVufDB8fHx8MTc3ODM4NTU4OXww&ixlib=rb-4.1.0&q=85",
+        "description": "School buildings with children in courtyard"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Execute fullstack Next.js or React+FastAPI implementation using these specific color variables in Tailwind config.",
+    "Add 'Hind Siliguri' and 'Poppins' via Google Fonts.",
+    "Implement bilingual state (e.g. using i18n or React Context) that toggles both text content and the font-family class on the body.",
+    "Include 'data-testid' on all interactive elements (e.g., data-testid='lang-toggle-btn', data-testid='donate-submit').",
+    "Build the Membership form exactly matching the fields requested: Name, Father's name, DOB, Address, Profession, Institution, Education, Email, Mobile, Blood group, NID/Birth Reg No.",
+    "Ensure Header gradient uses text-transparent background-clip for text, or background gradients for the header bar itself as per the explicit request (linear-gradient(90deg, #0D4F97, #56C2F0)).",
+    "Admin dashboard must be JWT protected and include basic CRUD UI for News, Events, Members, and Gallery.",
+    "Use provided image URLs directly. DO NOT use generic placeholder text or services."
+  ]
+}
